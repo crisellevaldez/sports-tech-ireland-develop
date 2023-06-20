@@ -1,0 +1,11 @@
+<div class="relative {{ class }} {{ color }} h-80 bg-cover bg-no-repeat bg-center rounded" 
+    {{#if photo}}
+        style="background-image: url('{{ photo }}');"
+    {{else}}
+        style="background-color: {{ color }};"
+    {{/if}}>
+    <h1 class="text-white text-4xl font-heading font-semibold uppercase m-10"> {{ text }} </h1>
+    <div class="absolute bottom-5 right-5">
+        {{> button text="Find out more" }}
+    </div>
+</div>

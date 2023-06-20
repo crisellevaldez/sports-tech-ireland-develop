@@ -1,0 +1,17 @@
+@tailwind base;
+
+[x-cloak] {
+	display: none !important;
+}
+
+@layer components {
+
+	.container {
+		@apply w-full px-4 mx-auto max-w-7xl;
+	}
+
+}
+
+
+@tailwind components;
+@tailwind utilities;

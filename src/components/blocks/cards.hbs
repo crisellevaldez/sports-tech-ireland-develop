@@ -1,0 +1,22 @@
+<section>
+    <!-- I can make this much cleaner in React,
+        for ex. I'll create an object and loop through it and call the card.hbs along with the props
+        I don't know if it's possible here. *I'm still exploring ;)*
+    -->
+
+    <div class="py-16">
+        <div class="flex flex-col lg:flex-row px-10 lg:px-24 gap-8">
+            {{> card class="w-full lg:w-3/5" text="Digital Athlete"
+                photo="https://images.pexels.com/photos/5909711/pexels-photo-5909711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }}
+            {{> card class="w-full lg:w-2/5" text="Women" color="bg-green" }}
+        </div>
+
+        <div class="flex flex-col lg:flex-row mt-8 px-10 lg:px-24 gap-8">
+            {{> card class="w-full lg:w-2/5" text="News & Insights" color="bg-purple" }}
+            {{> card class="w-full lg:w-3/5" text="Supporters"
+                photo="https://images.pexels.com/photos/10188858/pexels-photo-10188858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }}
+        </div>
+    </div>
+</section>
